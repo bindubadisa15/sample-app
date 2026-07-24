@@ -23,7 +23,7 @@ func redHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    http.HandleFunc("/blue", blueHandler)
-    http.HandleFunc("/red", redHandler)
-    http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/blue", blueHandler)
+	http.HandleFunc("/red", redHandler)
+	http.ListenAndServe(":8080", nil)
 }
